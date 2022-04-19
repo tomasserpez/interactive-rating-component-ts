@@ -48,4 +48,135 @@ input {
   -webkit-appearance: none;
   border-radius: 0;
 }
+
+body {
+  background: #121417;
+  font-family: Overpass, sans-serif;
+}
+
+.attribution {
+  color: white;
+}
+
+.container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: columns;
+          flex-direction: columns;
+  padding: 15% 0;
+}
+
+.container .first {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  background: #252d37;
+  width: 24rem;
+  height: 25rem;
+  padding: 3%;
+  border-radius: 5%;
+  margin: auto;
+}
+
+.container .first h1 {
+  font-weight: 700;
+  font-size: 1.4em;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.container .first p {
+  font-size: 15px;
+  color: #7c8798;
+}
+
+.container .first .stars ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-diraction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10% 0;
+}
+
+.container .first .stars ul li {
+  padding: 0;
+  width: 15%;
+  padding: 16px 15px;
+  border-radius: 100%;
+  background: #7c8798;
+  margin: 3%;
+}
+
+.container .first .stars ul li a {
+  text-align: center;
+  text-decoration: none;
+  color: #252d37;
+}
+
+.container .first .stars ul li:hover {
+  background: #fb7413;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.container .first .stars ul li:hover a {
+  color: white;
+}
+
+.container .first .submit {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background: #fb7413;
+  padding: 5% 40%;
+  margin: .5em;
+  border-radius: 50px;
+}
+
+.container .first .submit:hover {
+  background: white;
+  color: #fb7413;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.container .second {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  background: #252d37;
+  width: 25rem;
+  height: 28rem;
+  margin: auto;
+  display: none;
+}
+
+.container .second h1 {
+  font-weight: 700;
+}
+
+.container .second p {
+  font-size: 15px;
+}
 /*# sourceMappingURL=main.css.map */

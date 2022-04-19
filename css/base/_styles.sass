@@ -1,0 +1,107 @@
+
+// Primary color:
+$primaryColor: hsl(25,97%,53%)
+// Neutral colors:
+$whiteColor: hsl(0,0%,100%)
+$lightGreyColor: hsl(217,12%,63%)
+$mediumGreyColor: hsl(216,12%,54%)
+$darkBlueColor: hsl(213,19%,18%)
+$veryDarkBlueColor: hsl(215,12%,8%)
+
+// Typography
+$paragraphSize: 15px
+$primaryFont: Overpass
+$lightWeight: 400
+$heavyWeight: 700
+
+// Mobile
+$mobileSize: 375px
+$desktopSize: 1440px
+
+body
+    background: $veryDarkBlueColor
+    font-family: $primaryFont,sans-serif
+
+// Main content
+.attribution
+    color: $whiteColor
+.container
+    display:flex
+    justify-content: center
+    align-items: center
+    flex-wrap: no-wrap
+    flex-direction: columns
+    padding: 15% 0
+    .first
+        display:flex
+        justify-content: center
+        align-items: center
+        flex-wrap: no-wrap
+        background: $darkBlueColor
+        width: 24rem
+        height: 25rem
+        padding: 3%
+        border-radius: 5%
+        margin: auto
+        h1
+            font-weight: $heavyWeight
+            font-size: 1.4em
+            color: $whiteColor
+            padding-bottom: 10px
+        p
+            font-size: $paragraphSize
+            color: $mediumGreyColor
+        .stars
+            ul
+                display: flex
+                flex-diraction: row
+                justify-content: center
+                padding: 10% 0
+                li
+                    padding: 0
+                    width: 15%
+                    padding: 16px 15px
+                    border-radius: 100%
+                    background: $mediumGreyColor
+                    margin: 3%
+                    a
+                        text-align: center
+                        text-decoration: none
+                        color: $darkBlueColor
+                    &:hover
+                        background: $primaryColor
+                        transition: .5s ease
+                        a
+                            color: $whiteColor
+
+            
+        .submit
+            text-decoration: none
+            text-align: center
+            color: $whiteColor
+            background: $primaryColor
+            padding: 5% 40%
+            margin: .5em
+            border-radius: 50px
+            &:hover
+                background: $whiteColor
+                color: $primaryColor
+                transition: .5s ease
+
+    .second
+        display:flex
+        justify-content: center
+        align-items: center
+        flex-wrap: no-wrap
+        background: $darkBlueColor
+        width: 25rem
+        height: 28rem
+        margin: auto
+        display: none
+        
+        h1
+            font-weight: $heavyWeight
+
+
+        p
+            font-size: $paragraphSize
