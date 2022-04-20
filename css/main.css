@@ -89,6 +89,7 @@ body {
   padding: 3%;
   border-radius: 5%;
   margin: auto;
+  display: none;
 }
 
 .container .first h1 {
@@ -107,7 +108,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-diraction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -115,9 +119,8 @@ body {
 }
 
 .container .first .stars ul li {
-  padding: 0;
-  width: 15%;
-  padding: 16px 15px;
+  width: 25%;
+  padding: 15px 18px;
   border-radius: 100%;
   background: #7c8798;
   margin: 3%;
@@ -145,7 +148,7 @@ body {
   color: white;
   background: #fb7413;
   padding: 5% 40%;
-  margin: .5em;
+  margin: 0.4 0.5em;
   border-radius: 50px;
 }
 
@@ -166,17 +169,31 @@ body {
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap;
   background: #252d37;
-  width: 25rem;
-  height: 28rem;
+  width: 24rem;
+  height: 25rem;
+  padding: 3%;
+  border-radius: 5%;
   margin: auto;
-  display: none;
+  text-align: center;
 }
 
 .container .second h1 {
   font-weight: 700;
+  font-size: 1.4em;
+  color: white;
+  padding: 10px;
 }
 
 .container .second p {
   font-size: 15px;
+  color: #959eac;
+}
+
+.container .second .selection {
+  color: #fb7413;
+  background: rgba(149, 158, 172, 0.2);
+  margin: 1em 2em;
+  border-radius: 50px;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=main.css.map */
