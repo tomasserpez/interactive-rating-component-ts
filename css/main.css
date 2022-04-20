@@ -84,6 +84,7 @@ body {
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap;
   background: #252d37;
+  background: linear-gradient(336deg, #171a1f 0%, #2a303c 50%, #252d37 100%);
   width: 24rem;
   height: 25rem;
   padding: 5%;
@@ -168,6 +169,7 @@ body {
   -ms-flex-wrap: no-wrap;
       flex-wrap: no-wrap;
   background: #252d37;
+  background: linear-gradient(336deg, #171a1f 0%, #2a303c 50%, #252d37 100%);
   width: 24rem;
   height: 25rem;
   padding: 3%;
