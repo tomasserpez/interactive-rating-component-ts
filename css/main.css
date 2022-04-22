@@ -52,26 +52,43 @@ input {
 body {
   background: #121417;
   font-family: Overpass, sans-serif;
-}
-
-.attribution {
-  color: white;
-}
-
-.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
+  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: columns;
-          flex-direction: columns;
-  padding: 15% 0;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 100vh;
+}
+
+.attribution {
+  padding-top: 50px;
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .container .first {
@@ -85,8 +102,8 @@ body {
       flex-wrap: no-wrap;
   background: #252d37;
   background: linear-gradient(336deg, #171a1f 0%, #2a303c 50%, #252d37 100%);
-  width: 24rem;
-  height: 25rem;
+  width: 23rem;
+  height: 20rem;
   padding: 5%;
   border-radius: 5%;
   margin: auto;
@@ -157,45 +174,5 @@ body {
   color: #fb7413;
   -webkit-transition: .5s ease;
   transition: .5s ease;
-}
-
-.container .second {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
-  background: #252d37;
-  background: linear-gradient(336deg, #171a1f 0%, #2a303c 50%, #252d37 100%);
-  width: 24rem;
-  height: 25rem;
-  padding: 3%;
-  border-radius: 5%;
-  margin: auto;
-  text-align: center;
-  display: none;
-}
-
-.container .second h1 {
-  font-weight: 700;
-  font-size: 1.4em;
-  color: white;
-  padding: 10px;
-}
-
-.container .second p {
-  font-size: 15px;
-  color: #959eac;
-}
-
-.container .second .selection {
-  color: #fb7413;
-  background: rgba(149, 158, 172, 0.2);
-  margin: 1em 2em;
-  border-radius: 50px;
-  padding: 10px 0;
 }
 /*# sourceMappingURL=main.css.map */
