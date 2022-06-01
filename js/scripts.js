@@ -1,25 +1,23 @@
-// submitButton.addEventListener("click", document.getElementById("first").style.display="show");
+'use strict';
 
-document.getElementById("uno").onclick = function(){
-    document.getElementById("selection").innerHTML = "You selected 1 out of 5";
+
+let scoreButton = document.getElementsByClassName("scoreButton");
+for(let i = 0; i < 5; i++){
+    document.getElementById(`${i}`).onclick = function(){
+        document.getElementById("selection").innerHTML = "You selected " + scoreButton[i].innerHTML + " out of 5";
+    };
 };
-document.getElementById("dos").onclick = function(){
-    document.getElementById("selection").innerHTML = "You selected 2 out of 5";
-};
-document.getElementById("tres").onclick = function(){
-    document.getElementById("selection").innerHTML = "You selected 3 out of 5";
-};
-document.getElementById("cuatro").onclick = function(){
-    document.getElementById("selection").innerHTML = "You selected 4 out of 5";
-};
-document.getElementById("cinco").onclick = function(){
-    document.getElementById("selection").innerHTML = "You selected 5 out of 5";
-};
+
 
 document.getElementById("submitButton").onclick = function()
 {
-    document.getElementById("first").style.display = "none";
-    document.getElementById("second").style.display = "block";
+    if (document.getElementById("selection").innerHTML == "You selected  out of 5")
+    {
+        alert("Please, pick a score before submitting.")
+    }else{
+        document.getElementById("first").style.display = "none";
+        document.getElementById("second").style.display = "block";
+    }
 };
 
 // document.getElementById(".second").style.display = "show"
